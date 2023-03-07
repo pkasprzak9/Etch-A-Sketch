@@ -3,6 +3,7 @@ const columns = 16;
 
 const grid = document.createElement('div');
 grid.className = 'grid';
+const container = document.getElementById('container');
 
 for (let i = 0; i < columns; i++){
     const column = document.createElement('div');
@@ -15,4 +16,4 @@ for (let i = 0; i < columns; i++){
     }
     grid.appendChild(column);
 }
-document.body.appendChild(grid);
+container.appendChild(grid);
