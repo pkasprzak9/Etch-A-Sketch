@@ -20,7 +20,7 @@ container.appendChild(grid);
 
 
 function fillBox(){
-    this.style.background = 'blue';
+    this.style.background = 'gold';
 }
 function startDrawing(){
     const boxes = document.querySelectorAll('.row')
