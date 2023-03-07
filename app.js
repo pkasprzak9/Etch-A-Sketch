@@ -18,6 +18,18 @@ for (let i = 0; i < columns; i++){
 }
 container.appendChild(grid);
 
-grid.addEventListener('mouseover', (event) => {
-    event.target.style.background = 'blue'
-})
+
+function fillBox(e){
+    this.style.background = 'blue';
+}
+function startDrawing(){
+    const boxes = document.querySelectorAll('.row')
+    boxes.forEach(box => box.addEventListener('mouseover', fillBox))
+}
+function stopDrawing(){
+    const boxes = document.querySelectorAll('.row')
+    boxes.forEach(box => box.removeEventListener('mouseover', fillBox))
+}
+
+grid.addEventListener('mousedown', startDrawing);
+grid.addEventListener('mouseup', stopDrawing);
