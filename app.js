@@ -1,5 +1,5 @@
-const rows = 16;
-const columns = 16;
+const rows = 24;
+const columns = 24;
 
 const grid = document.createElement('div');
 grid.className = 'grid';
