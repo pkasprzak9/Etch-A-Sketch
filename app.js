@@ -33,3 +33,11 @@ function stopDrawing(){
 
 grid.addEventListener('mousedown', startDrawing);
 grid.addEventListener('mouseup', stopDrawing);
+
+
+function clearGrid(){
+    const boxes = document.querySelectorAll('.row')
+    boxes.forEach(box => box.style.background = 'white');
+}
+const clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', clearGrid);
