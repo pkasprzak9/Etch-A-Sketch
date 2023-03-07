@@ -19,7 +19,7 @@ for (let i = 0; i < columns; i++){
 container.appendChild(grid);
 
 
-function fillBox(e){
+function fillBox(){
     this.style.background = 'blue';
 }
 function startDrawing(){
