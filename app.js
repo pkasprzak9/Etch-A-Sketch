@@ -10,7 +10,7 @@ for (let i = 0; i < columns; i++){
     for (let j = 0; j < rows; j++){
         const row = document.createElement('div');
         row.className = 'row';
-        row.textContent = i + '-' + j;
+        row.textContent = ' ';
         column.appendChild(row) 
     }
     grid.appendChild(column);
