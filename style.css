@@ -4,11 +4,11 @@ body {
 }
 
 .grid {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: fit-content;
+    height: fit-content;
 }
 
 .row {
@@ -20,6 +20,6 @@ body {
     text-align: center;
 }
 
-.row:hover {
+/* .row:hover {
     background: black;
-}
+} */

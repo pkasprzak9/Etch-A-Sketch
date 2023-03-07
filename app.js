@@ -17,3 +17,7 @@ for (let i = 0; i < columns; i++){
     grid.appendChild(column);
 }
 container.appendChild(grid);
+
+grid.addEventListener('mouseover', (event) => {
+    event.target.style.background = 'blue'
+})
