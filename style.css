@@ -92,6 +92,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 #color-picker {
     background-color: greenyellow;
+    border-style: solid;
 }
 
 .grid {
