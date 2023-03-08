@@ -6,6 +6,8 @@ body {
     height: 100%;
     border-style: solid;
     border-color: red;
+    display: flex;
+    flex-direction: column;
 }
 #content {
     border-style: solid;
@@ -15,8 +17,16 @@ body {
     align-items: center;
     background-color: #ffffff;
 }
+#menu {
+    border-style: solid;
+    border-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
 
 .grid {
+    border-style: solid;
+    border-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;

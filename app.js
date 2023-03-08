@@ -18,9 +18,9 @@ for (let i = 0; i < columns; i++){
 }
 container.appendChild(grid);
 
-
+let color = '#000000';
 function fillBox(){
-    this.style.background = 'gold';
+    this.style.background = color;
 }
 function startDrawing(){
     const boxes = document.querySelectorAll('.row')
@@ -41,3 +41,8 @@ function clearGrid(){
 }
 const clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', clearGrid);
+
+const colorPicker = document.getElementById('color-picker');
+colorPicker.addEventListener('change', () => {
+    color = colorPicker.value;
+})
