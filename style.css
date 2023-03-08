@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-smooth: never;
+-webkit-font-smoothing : none;
 }
 #container {
     background-color: black;
