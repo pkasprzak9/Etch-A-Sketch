@@ -1,37 +1,40 @@
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 #container {
+    background-color: black;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:flex-start;
+    gap: 200px;
     align-items: center;
 }
 #title {
-    color: red;
+    margin: 40px;
+    color: greenyellow;
     border-width: 5px;
     border-style: solid;
-    border-color: red;
+    border-color: greenyellow;
     border-radius: 5px;
     padding: 7px 14px;
     transition: all 0.3s;
 }
 #title:hover{
 transform: translateY(-15px);
-background-color: red;
-color: white;
-padding: 7px 70px;
+background-color: greenyellow;
+color: black;
 }
 
 
 #content {
+    color: greenyellow;
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 #menu {
     height: 100%;
@@ -56,10 +59,44 @@ padding: 7px 70px;
     justify-content:center;
     gap: 20px;
 }
+input[type=range]{
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: greenyellow;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: black;
+    border-style: solid;
+    border-color: greenyellow;
+    margin-top: -5px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: greenyellow;
+}
+
+#color-picker {
+    background-color: greenyellow;
+}
 
 .grid {
     border-style: solid;
-    border-color: red;
+    border-color: greenyellow;
     border-width: 5px;
     display: flex;
     justify-content: center;
@@ -69,7 +106,6 @@ padding: 7px 70px;
 }
 
 .row {
-    background: white;
     text-align: center;
     display: flex;
     flex-grow: 1;
@@ -80,4 +116,11 @@ padding: 7px 70px;
     flex-direction: column;
     flex-grow: 1;
     align-self: stretch;
+}
+
+#clear-button {
+    background-color: black;
+    border-style: solid;
+    border-color: greenyellow;
+    color: greenyellow;
 }

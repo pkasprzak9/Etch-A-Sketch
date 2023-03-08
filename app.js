@@ -25,7 +25,7 @@ function createGrid(){
 createGrid();
 
 
-let color = '#000000';
+let color = 'greenyellow';
 function fillBox(){
     this.style.background = color;
 }
@@ -43,7 +43,7 @@ grid.addEventListener('mouseup', stopDrawing);
 
 function clearGrid(){
     const boxes = document.querySelectorAll('.row')
-    boxes.forEach(box => box.style.background = 'white');
+    boxes.forEach(box => box.style.background = 'black');
 }
 const clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', clearGrid);
