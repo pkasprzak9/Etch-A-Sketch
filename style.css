@@ -2,8 +2,6 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-smooth: never;
--webkit-font-smoothing : none;
 }
 #container {
     background-color: black;
@@ -13,6 +11,9 @@ body {
     justify-content:flex-start;
     gap: 200px;
     align-items: center;
+    font-smooth: never;
+-webkit-font-smoothing : none;
+    font-family: 'Copperplate';
 }
 #title {
     margin: 40px;
