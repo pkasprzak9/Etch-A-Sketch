@@ -20,7 +20,7 @@ function createGrid(){
     }
     container.appendChild(grid);
     const sizeDisplay = document.getElementById('grid-size-display');
-    sizeDisplay.innerHTML = "Size: " + size + " x " + size; 
+    sizeDisplay.innerHTML = "SIZE: " + size + " x " + size; 
 }
 createGrid();
 

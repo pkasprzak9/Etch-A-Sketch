@@ -4,13 +4,11 @@ body {
 }
 #container {
     height: 100%;
-    border-style: solid;
-    border-color: red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 #content {
-    border-style: solid;
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -18,18 +16,30 @@ body {
     background-color: #ffffff;
 }
 #menu {
-    border-style: solid;
-    border-color: greenyellow;
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 #menu-settings {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#menu-settings-size,
+#menu-settings-color {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 20px;
 }
 
 .grid {
-    border-style: solid;
-    border-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
