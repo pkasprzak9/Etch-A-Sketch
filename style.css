@@ -1,3 +1,13 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -9,6 +19,25 @@ body {
     justify-content:space-evenly;
     align-items: center;
 }
+#title {
+    color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+    padding: 7px 14px;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    transition: all 0.3s;
+}
+#title:hover{
+transform: translateY(-10px);
+background-color: red;
+color: white;
+}
+
+
 #content {
     display: flex;
     gap: 50px;
