@@ -2,16 +2,18 @@ html,
 body {
     height: 100%;
 }
-
 #container {
-    border-style: solid;
     height: 100%;
+    border-style: solid;
+    border-color: red;
+}
+#content {
+    border-style: solid;
     display: flex;
-    flex-direction: column;
     gap: 50px;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .grid {

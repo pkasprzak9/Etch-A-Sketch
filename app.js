@@ -3,7 +3,7 @@ const columns = 24;
 
 const grid = document.createElement('div');
 grid.className = 'grid';
-const container = document.getElementById('container');
+const container = document.getElementById('content');
 
 for (let i = 0; i < columns; i++){
     const column = document.createElement('div');
