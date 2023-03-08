@@ -11,9 +11,16 @@
     <div id="container">
         <div id="content">
             <div id="menu">
-                <div id="menu-colors">
-                    <label for="color-picker">COLOR PICKER</label>
-                    <input type="color" name="color-picker" id="color-picker">
+                <div id="menu-settings">
+                    <div id="menu-settings-size">
+                        <label for="grid-size" id="grid-size-display"></label>
+                        <input type="range" name="grid-size" id="grid-size"
+                        min="16", max="64">
+                    </div>
+                    <div id="menu-settings-color">
+                        <label for="color-picker">COLOR PICKER</label>
+                        <input type="color" name="color-picker" id="color-picker">
+                    </div>
                 </div>
                 <button id="clear-button">CLEAR</button>
             </div>

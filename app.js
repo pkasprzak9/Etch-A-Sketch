@@ -1,22 +1,29 @@
-const rows = 24;
-const columns = 24;
+let size = 24;
 
 const grid = document.createElement('div');
 grid.className = 'grid';
 const container = document.getElementById('content');
 
-for (let i = 0; i < columns; i++){
-    const column = document.createElement('div');
-    column.className = 'column';
-    for (let j = 0; j < rows; j++){
-        const row = document.createElement('div');
-        row.className = 'row';
-        row.textContent = ' ';
-        column.appendChild(row) 
+
+function createGrid(){
+    grid.innerHTML = '';
+    for (let i = 0; i < size; i++){
+        const column = document.createElement('div');
+        column.className = 'column';
+        for (let j = 0; j < size; j++){
+            const row = document.createElement('div');
+            row.className = 'row';
+            row.textContent = ' ';
+            column.appendChild(row) 
+        }
+        grid.appendChild(column);
     }
-    grid.appendChild(column);
+    container.appendChild(grid);
+    const sizeDisplay = document.getElementById('grid-size-display');
+    sizeDisplay.innerHTML = "Size: " + size + " x " + size; 
 }
-container.appendChild(grid);
+createGrid();
+
 
 let color = '#000000';
 function fillBox(){
@@ -30,7 +37,6 @@ function stopDrawing(){
     const boxes = document.querySelectorAll('.row')
     boxes.forEach(box => box.removeEventListener('mouseover', fillBox))
 }
-
 grid.addEventListener('mousedown', startDrawing);
 grid.addEventListener('mouseup', stopDrawing);
 
@@ -46,3 +52,10 @@ const colorPicker = document.getElementById('color-picker');
 colorPicker.addEventListener('change', () => {
     color = colorPicker.value;
 })
+
+const slider = document.getElementById('grid-size');
+slider.addEventListener('change', () => {
+    size = slider.value;
+    createGrid();
+})
+

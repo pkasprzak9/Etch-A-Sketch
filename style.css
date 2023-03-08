@@ -23,6 +23,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+#menu-settings {
+    
+}
 
 .grid {
     border-style: solid;
