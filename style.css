@@ -32,9 +32,10 @@ body {
     transition: all 0.3s;
 }
 #title:hover{
-transform: translateY(-10px);
+transform: translateY(-15px);
 background-color: red;
 color: white;
+padding: 7px 70px;
 }
 
 
