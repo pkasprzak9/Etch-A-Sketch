@@ -2,21 +2,24 @@ html,
 body {
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 #container {
-    background-color: black;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content:flex-start;
-    gap: 200px;
-    align-items: center;
+    gap: 100px;
+    align-items: flex-end;
     font-smooth: never;
 -webkit-font-smoothing : none;
     font-family: 'Copperplate';
+    margin-right: 40px;
 }
 #title {
-    margin: 40px;
+    margin-top: 40px;
+    justify-content: flex-end;
     color: greenyellow;
     border-width: 5px;
     border-style: solid;
@@ -38,6 +41,7 @@ color: black;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 #menu {
     height: 100%;
