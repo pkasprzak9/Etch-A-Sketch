@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: black;
 }
+
 #container {
     height: 100%;
     display: flex;
@@ -131,4 +132,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border-style: solid;
     border-color: greenyellow;
     color: greenyellow;
+}
+#sign {
+    color: greenyellow;
+}
+#github-logo {
+    width: 25px;
 }
