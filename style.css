@@ -3,12 +3,13 @@ body {
     height: 100%;
     margin: 0;
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 #container {
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content:flex-start;
     gap: 100px;
@@ -16,7 +17,6 @@ body {
     font-smooth: never;
 -webkit-font-smoothing : none;
     font-family: 'Copperplate';
-    margin-right: 40px;
 }
 #title {
     margin-top: 40px;
@@ -118,6 +118,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     text-align: center;
     display: flex;
     flex-grow: 1;
+    border-style: solid;
+    border-width: 0.01em;
 }
 
 .column {
@@ -135,6 +137,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 #sign {
     color: greenyellow;
+    margin-bottom: 40px;
 }
 #github-logo {
     width: 25px;
