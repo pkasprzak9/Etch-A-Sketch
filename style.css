@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/*  CONTAINS THE ACTUAL CONTENT */
 #container {
     padding: 5px 30px;
     height:fit-content;
@@ -40,7 +40,7 @@ background-color: greenyellow;
 color: black;
 }
 
-
+/*  GRID AND ITS MENU   */
 #content {
     color: greenyellow;
     display: flex;
@@ -49,6 +49,7 @@ color: black;
     align-items: center;
     flex-wrap: wrap;
 }
+/*  LEFT    */
 #menu {
     height: 100%;
     width: auto;
@@ -82,7 +83,6 @@ input[type=range]::-webkit-slider-runnable-track {
     border: none;
     border-radius: 3px;
 }
-
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
@@ -94,20 +94,23 @@ input[type=range]::-webkit-slider-thumb {
     border-color: greenyellow;
     margin-top: -5px;
 }
-
 input[type=range]:focus {
     outline: none;
 }
-
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: greenyellow;
 }
-
 #color-picker {
     background-color: greenyellow;
     border-style: solid;
 }
-
+#clear-button {
+    background-color: black;
+    border-style: solid;
+    border-color: greenyellow;
+    color: greenyellow;
+}
+/*  RIGHT   */
 .grid {
     border-style: solid;
     border-color: greenyellow;
@@ -118,7 +121,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 400px;
     height: 400px;
 }
-
+/*  GRIDS CONTENT   */
 .row {
     text-align: center;
     display: flex;
@@ -126,20 +129,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border-style: solid;
     border-width: 0.01em;
 }
-
 .column {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     align-self: stretch;
 }
-
-#clear-button {
-    background-color: black;
-    border-style: solid;
-    border-color: greenyellow;
-    color: greenyellow;
-}
+/*  FOOTER */
 #sign {
     color: greenyellow;
 }
